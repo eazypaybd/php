@@ -12,7 +12,7 @@ echo $Recharge->chack($params);
 $params = array();
 $params['mobile'] = "01711111111";
 $params['amount'] = "20";
-$params['oparetor'] = "gp";
-$params['type'] = "prepaid";
+$params['oparetor'] = "gp";// Grameenphone = gp, Banglalink = bl, Airtel = at, Robi = rb, Teletalk = tt;
+$params['type'] = "prepaid";// prepaid,postpaid,sktto
 echo $Recharge->recharge($params);
 // recharge requst end
