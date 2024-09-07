@@ -5,7 +5,7 @@ $secretkey = "your secret key";
 $mobilerecharge = mobilerecharge($apikey, $secretkey);
 
 // balance chack start
-echo $Recharge->chack($params);
+echo $Recharge->chack();
 // balance chack end
 
 // recharge requst start
@@ -16,3 +16,13 @@ $params['oparetor'] = "gp";// Grameenphone = gp, Banglalink = bl, Airtel = at, R
 $params['type'] = "prepaid";// prepaid,postpaid,sktto
 echo $Recharge->recharge($params);
 // recharge requst end
+
+
+// Recharge Query by_Trxid
+$trxid = "MUGB44333553";
+echo $Recharge->query_by_trxid($trxid);
+
+
+// Recharge Query by id
+$id = "1476587575457";
+echo $Recharge->query_by_id($id);
