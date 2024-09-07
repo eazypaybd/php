@@ -2,7 +2,7 @@
 require_once('mobilerecharge.php');
 $apikey = "your api key";
 $secretkey = "your secret key";
-$mobilerecharge = mobilerecharge($apikey, $secretkey);
+$mobilerecharge = new mobilerecharge($apikey, $secretkey);
 
 // balance chack start
 echo $Recharge->chack();
